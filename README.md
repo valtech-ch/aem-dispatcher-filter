@@ -17,7 +17,7 @@ Deny
 etc
 ```
 
-This is a fundamentally weak approach as any IT security expert or firewall administrator will confirm.
+This is a fundamentally weak approach.
 
 - Developers rarely apply simple clean-coding type norms in dispatcher filters.  
 
