@@ -6,7 +6,7 @@ In general we find that dispatcher filters 'in the wild' are poorly implemented 
 
 - The OOTB dispatcher filter files on which most rulesets are based are very weak. The archetype filters are designed primarily to ensure that AEM works when newly set-up and contribute little to security in their raw form.
 
-- An accepted firewall best practice of deny/allow is only losely followed in most live dispatcher filter rulesets, that is, paraphrased:
+- An accepted firewall best practice of deny/allow is only loosely followed in most live dispatcher filter rulesets, that is, paraphrased:
 
 ```
 Deny all
