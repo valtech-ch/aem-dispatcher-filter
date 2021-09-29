@@ -86,6 +86,20 @@ While filter rules themselves are independent, the last matching rule in a filte
 
 Rules can be written using Glob or Regular expression patterns to match URL elements.  
 
+Filter rules are named (usually numbered) but these names have no effect on filter function, therefore:
+- Rules are processed in order of appearance irrespective of any numbering sequence
+- Rules with the same name/number are processed as normal, with the conflict reported in the log
+
+Optionally human-readable names can be used and if a complex rules set, namespaces, for example:
+
+/forms_001
+
+/forms_002
+
+/search_001
+
+/search_002
+
 ### Glob Matching Syntax
 
 Glob pattern matching is used when filters use double quote, for example:
@@ -318,26 +332,7 @@ better would probably be:
 
 - Avoid overlapping rules except when in a logical sequence such as shown in the Tenant examples above.
 
-
-### 4. Naming of Rules
-
-Filter rules are named (usually numbered) but these names have no effect on filter function, therefore:
-- Rules are processed in order of appearance irrespective of any numbering sequence
-- Rules with the same name/number are processed as normal, with the conflict reported in the log
-
-Optionally human-readable names can be used and if a complex rules set, namespaces, for example:
-
-/forms_001
-
-/forms_002
-
-/search_001
-
-/search_002
-
-For the purposes of a review, rules should be consistently named, in a sensible order and without naming conflicts.  Namespaces can be suggested to assist with management of complex rule sets.
-
-### 5. Imprecise Regexes for Paths
+### 4. Imprecise Regexes for Paths
 
 Regexes should match as closely as reasonably possible.  This example rule would allow json access to a home page of a we-retail site (perhaps for a custom json servlet):
 
@@ -370,7 +365,7 @@ The regex should be more prescriptive.  An improved rule would be:
   /suffix ''
 ```
 
-###  6. URL Parameters 
+###  5. URL Parameters 
 
 The points so far have ignored a further filter function, /query, which handles URL Parameters. These are the properties following a `?` at the end of a URL, eg:
 
