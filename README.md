@@ -1,6 +1,6 @@
 # AEM Dispatcher Filter Best Practices
 
-The Valtech AEM Dispatcher Filter best practice project was initially created together with Adobe's EMEA AEM practice to address shortcomings in the HelpX documentation, with the longer term aim of contribution to HelpX.
+The AEM Dispatcher Filter best practice project was initially created together with Adobe's EMEA AEM practice to address shortcomings in the HelpX documentation, with the longer term aim of contribution to HelpX.
 
 In general we find that dispatcher filters 'in the wild' are poorly implemented and as a result exploits that make use of crafted URLs to evade filtering are common.  Key problems are:
 
