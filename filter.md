@@ -300,7 +300,7 @@ To avoid this the following are recommended:
 
 - Avoid overly complex regexes, and if necessary comment regexes carefully to explain what they do.
 - Follow a logical sequence of rules
-- Apply the principle of separation of concerns, by ensuring that each rule has a sensible scope. Naming rules will help here, for example the following rule is probably undesirable and this would be obvious as soon as a description rule name is attempted:
+- Apply the principle of separation of concerns, by ensuring that each rule has a sensible scope. Naming rules will help here, for example the following rule is probably undesirable and this would be obvious as soon as a descriptive rule name is used:
 
 ```
 /contentForTenant1Tenant2Tenant4 { ...  }
