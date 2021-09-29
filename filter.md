@@ -16,7 +16,7 @@
 
 ## Disclaimer
 
-This document is trying to outline the most common dispatcher configuration mistakes. There is no guarantee that following this guide makes the system bullet-proof. The AEM Dispatcher is not a replacement for a full-fledged Web Application Firewall. 
+This document provides best practice guidelines and also looks at common problems in filter rulesets and improvements to overcome them. There is no guarantee that following this guide makes the system bullet-proof. The AEM Dispatcher is not a replacement for a full-fledged Web Application Firewall. 
 
 ## Purpose
 
