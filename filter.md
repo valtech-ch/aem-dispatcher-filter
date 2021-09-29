@@ -337,31 +337,6 @@ Optionally human-readable names can be used and if a complex rules set, namespac
 
 For the purposes of a review, rules should be consistently named, in a sensible order and without naming conflicts.  Namespaces can be suggested to assist with management of complex rule sets.
 
-Many dispatcher filter configurations become unecessarily complex over time, as developers add additional rules to support features without understanding the mechanism or entire file.
-
-To avoid this the following are recommended:
-
-- Avoid overly complex regexes, and if necessary comment regexes carefully to explain what they do.
-- Follow a logical sequence of rules
-- Apply the principle of separation of concerns, by ensuring that each rule has a sensible scope. Naming rules will help here, for example the following rule is probably undesirable and this would be obvious as soon as a description rule name is attempted:
-
-```
-/contentForTenant1Tenant2Tenant4 { ...  }
-```
-
-better would probably be:
-
-```
-/contentAllTenants { ...  }
-
-/contentForTenant1 { ...  }
-
-/contentForTenant2 { ...  }
-```
-
-- Attempt to avoid overlapping except when in a logical sequence such as shown in the Tenant examples above.
-
-
 ### 5. Imprecise Regexes for Paths
 
 Regexes should match as closely as reasonably possible.  This example rule would allow json access to a home page of a we-retail site (perhaps for a custom json servlet):
