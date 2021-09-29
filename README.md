@@ -19,7 +19,7 @@ etc
 
 This is a fundamentally weak approach.
 
-- Developers rarely apply simple clean-coding type norms in dispatcher filters.  
+- Developers rarely apply simple clean-coding type norms to filter configuration.  
 
 - The dispatcher filter is normally an afterthought in feature development
 
