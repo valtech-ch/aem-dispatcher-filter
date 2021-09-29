@@ -4,7 +4,7 @@ The AEM Dispatcher Filter best practice project was initially created together w
 
 In general we find that dispatcher filters 'in the wild' are poorly implemented and as a result exploits that make use of crafted URLs to evade filtering are common.  Key problems are:
 
-- The OOTB dispatcher filter files on which most rulesets are based are very weak. The archetype filters are designed primarily to ensure that AEM works when newly set-up and contribute little to security in their raw form.
+- The OOTB dispatcher filter files on which most rulesets are based are weak. The archetype filters are designed primarily to ensure that AEM works when newly set-up and contribute little to security in their raw form.
 
 - An accepted firewall best practice of deny/allow is only loosely followed in most live dispatcher filter rulesets, that is, paraphrased:
 
@@ -17,11 +17,11 @@ Deny
 etc
 ```
 
-This is a fundamentally weak approach.
+The need for large numbers of deny rules is indicative of a poor implementation.
 
-- Developers rarely apply simple clean-coding type norms to filter configuration.  
+- Developers do not always apply simple clean-coding type norms to filter configuration.  
 
-- The dispatcher filter is normally an afterthought in feature development
+- The dispatcher filter is often an afterthought in feature development
 
 ### Content
 
